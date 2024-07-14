@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .wrapper {
+        background-color: rgb(203, 211, 211);
+        width: 800px;
+        height: 1024px;
+        margin: 0 auto;
+        padding-left: 20px;
+        padding: 20px;
+      }
+      .wrapper > .content {
+        background-color: aqua;
+        height: 100%;
+        width: 300px;
+      }
+      .avatar {
+        background-color: bisque;
+        width: 100%;
+        height: 30%;
+      }
+
+      .avatar > .avatar2 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+        height: 50%;
+      }
+
+      .avatar > .avatar2 .resume-pic {
+        background-image: url("/resume-pic.jpg");
+        background-size: cover;
+        height: 40%;
+        width: 40%;
+        border-radius: 50%;
+        margin: 20px;
+      }
+      .contact-info {
+        background-color: bisque;
+        width: 100%;
+        height: 20%;
+      }
+
+      .contact-info > .title {
+        background-color: gray;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+      }
+      .ed {
+        background-color: bisque;
+        width: 100%;
+        height: 20%;
+      }
+      .ed > .title {
+        background-color: gray;
+        width: 100%;
+        height: 20%;
+        text-align: center;
+        /* line-height: ; */
+      }
+      .autobiography {
+        background-color: bisque;
+        width: 100%;
+        height: 30%;
+      }
+      .autobiography > .title {
+        background-color: gray;
+        width: 100%;
+        height: 15%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="content">
+        <div class="avatar">
+          <div class="avatar2">
+            <div class="resume-pic"></div>
+          </div>
+
+          <div class="name">陳玟宇</div>
+        </div>
+
+        <div class="contact-info">
+          <div class="title">聯繫方式</div>
+          <div class="content">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="ed">
+          <div class="title">學歷</div>
+          <div class="content"></div>
+        </div>
+
+        <div class="autobiography">
+          <div class="title">自傳</div>
+          <div class="content"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

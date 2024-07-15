@@ -48,6 +48,7 @@
       .name {
         text-align: center;
       }
+
       .contact-info {
         background-color: bisque;
         width: 100%;
@@ -114,12 +115,76 @@
         padding-top: 3px;
       }
       .language > .content {
-        height: 90%;
+        height: 85%;
       }
 
       .title:hover ~ .content {
         background-color: #dac27d;
       }
+      
+
+.listProgram > .bar{
+  width: 50%;
+  height: 10px;
+  border: solid 2px #ff7168;
+  border-radius: 5px;
+}
+
+
+.listProgram > li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+
+.value{
+  width: 30%;
+  height: 100%;
+  background: #ff7168;
+}
+
+.value + .p10{
+  width: 10%;
+}
+
+.value + .p20{
+  width: 20%;
+}
+
+.value + .p30{
+  width: 30%;
+}
+
+.value + .p40{
+  width: 40%;
+}
+
+.value + .p50{
+  width: 50%;
+}
+
+.value + .p60{
+  width: 60%;
+}
+
+.value + .p70{
+  width: 70%;
+}
+
+.value + .p80{
+  width: 80%;
+}
+
+.value + .p90{
+  width: 90%;
+}
+
+.value + .p100{
+  width: 100%;
+}
+
     </style>
   </head>
   <body>
@@ -129,7 +194,6 @@
           <div class="avatar2">
             <div class="resume-pic"></div>
           </div>
-
           <div class="name">陳玟宇</div>
         </div>
 
@@ -155,8 +219,17 @@
 
         <div class="language">
           <div class="title">語言</div>
-          <div class="content"></div>
-        </div>
+          <div class="content">
+            <p>
+              中文：
+              <progress max="100" value="100"></progress>
+            </p>
+            <p>
+              <label for="file">英文：</label>
+              <progress max="100" value="55"></progress>
+            </p>
+            
+          </div>
       </div>
     </div>
   </body>

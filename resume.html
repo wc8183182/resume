@@ -36,48 +36,89 @@
         height: 50%;
       }
 
-      .avatar > .avatar2 .resume-pic {
+      .avatar > .avatar2 > .resume-pic {
         background-image: url("/resume-pic.jpg");
         background-size: cover;
-        height: 40%;
+        /* height: 40%; */
         width: 40%;
         border-radius: 50%;
         margin: 20px;
+      }
+
+      .name {
+        text-align: center;
       }
       .contact-info {
         background-color: bisque;
         width: 100%;
         height: 20%;
+        text-align: center;
       }
 
       .contact-info > .title {
-        background-color: gray;
+        background-color: #bfa588;
         width: 100%;
         height: 15%;
-        text-align: center;
+        padding-top: 3px;
       }
+      .contact-info > .content {
+        background-color: bisque;
+        height: 85%;
+      }
+
       .ed {
         background-color: bisque;
         width: 100%;
         height: 20%;
+        text-align: center;
       }
       .ed > .title {
-        background-color: gray;
+        background-color: #bfa588;
         width: 100%;
-        height: 20%;
-        text-align: center;
-        /* line-height: ; */
+        height: 16%;
+        padding-top: 3px;
       }
-      .autobiography {
+      .ed > .content {
+        background-color: bisque;
+        height: 85%;
+        text-align: center;
+        padding: 7%;
+      }
+
+      .ed > .content > .details {
+        background-color: #e0e0e0;
+        margin-bottom: 20px;
+      }
+
+      .date {
+        font-weight: bold;
+        color: #333;
+        font-size: 13px;
+      }
+      .school {
+        font-size: 1.2em;
+        color: #333;
+      }
+
+      .language {
         background-color: bisque;
         width: 100%;
         height: 30%;
       }
-      .autobiography > .title {
-        background-color: gray;
+
+      .language > .title {
+        background-color: #bfa588;
         width: 100%;
-        height: 15%;
+        height: 10%;
         text-align: center;
+        padding-top: 3px;
+      }
+      .language > .content {
+        height: 90%;
+      }
+
+      .title:hover ~ .content {
+        background-color: #dac27d;
       }
     </style>
   </head>
@@ -94,22 +135,26 @@
 
         <div class="contact-info">
           <div class="title">聯繫方式</div>
-          <div class="content">
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
-          </div>
+          <div class="content"></div>
         </div>
 
         <div class="ed">
           <div class="title">學歷</div>
-          <div class="content"></div>
+          <div class="content">
+            <div class="details">
+              <div class="date">2016/9 - 2019/6</div>
+              <div class="school">草屯商工 資料處理科</div>
+            </div>
+
+            <div class="details">
+              <div class="date">2019/9 - 2023/6</div>
+              <div class="school">台中科技大學 國貿系</div>
+            </div>
+          </div>
         </div>
 
-        <div class="autobiography">
-          <div class="title">自傳</div>
+        <div class="language">
+          <div class="title">語言</div>
           <div class="content"></div>
         </div>
       </div>

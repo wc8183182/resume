@@ -2,72 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=di, initial-scale=1.0" />
     <title>Document</title>
-
     <style>
-      body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        background-color: #f4f4f4;
-        margin: 0;
-        padding: 20px;
+      div {
+        background-color: gray;
       }
-
-      .education {
-        max-width: 400px;
-        margin: auto;
-        background: #fff;
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
-
-      .entry {
-        margin-bottom: 20px;
-        padding: 10px;
-        background-color: #e0e0e0;
-        border-radius: 5px;
-      }
-
-      .date {
-        font-weight: bold;
-        color: #333;
-      }
-
-      .details {
-        margin-left: 20px;
-      }
-
-      .school {
-        font-size: 1.2em;
-        color: #333;
-      }
-
-      .department,
-      .degree {
-        font-size: 1em;
-        color: #666;
+      div::before {
+        content: "我是before";
+        color: red;
       }
     </style>
   </head>
   <body>
-    <div class="education">
-      <div class="entry">
-        <div class="date">2016/9 - 2020/6</div>
-        <div class="details">
-          <div class="school">樹德科技大學</div>
-          <div class="department">藝術管理與藝術經紀系</div>
-          <div class="degree">大學課程</div>
-        </div>
-      </div>
-      <div class="entry">
-        <div class="date">2013/9 - 2016/6</div>
-        <div class="details">
-          <div class="school">國立岡山高中</div>
-          <div class="department">家政科</div>
-          <div class="degree">高中畢業</div>
-        </div>
-      </div>
-    </div>
+    <div>我是內容</div>
   </body>
 </html>

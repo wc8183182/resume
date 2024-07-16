@@ -57,8 +57,15 @@
 .contact-info > .content {
   background-color: bisque;
   height: 85%;
+  padding: 20px 0;
 }
 
+.fa-phone-volume,
+.fa-square-envelope,
+.fa-github {
+  padding: 10px 0;
+  float: left;
+}
 .ed {
   background-color: bisque;
   width: 100%;

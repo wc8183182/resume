@@ -13,6 +13,7 @@
   background-color: aqua;
   height: 100%;
   width: 300px;
+  border-style: dashed solid;
 }
 .avatar {
   background-color: bisque;
@@ -53,18 +54,27 @@
   width: 100%;
   height: 15%;
   padding-top: 3px;
+  border-style: dotted;
 }
 .contact-info > .content {
   background-color: bisque;
   height: 85%;
-  padding: 20px 0;
+  padding: 29px 15px;
+  text-align: left;
 }
 
 .fa-phone-volume,
 .fa-square-envelope,
 .fa-github {
-  padding: 10px 0;
-  float: left;
+  /* padding: 10px 29px; */
+  font-size: 16px;
+  display: block;
+  margin: 10px;
+}
+.phone,
+.mail,
+.github {
+  display: inline;
 }
 .ed {
   background-color: bisque;
@@ -77,6 +87,7 @@
   width: 100%;
   height: 16%;
   padding-top: 3px;
+  border-style: dotted;
 }
 .ed > .content {
   background-color: bisque;
@@ -113,6 +124,7 @@
   height: 10%;
   text-align: center;
   padding-top: 3px;
+  border-style: dotted;
 }
 .language > .content {
   height: 90%;

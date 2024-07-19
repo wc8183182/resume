@@ -8,13 +8,21 @@
   margin: 0 auto;
   padding-left: 20px;
   padding: 20px;
+  display: flex;
 }
 .wrapper > .content {
   background-color: aqua;
   height: 100%;
   width: 300px;
   border-style: dashed solid;
+  display: inline-block;
 }
+.right-content {
+  height: 100%;
+  width: 460px;
+  background-color: #ffdcb9;
+}
+
 .avatar {
   background-color: bisque;
   width: 100%;
@@ -39,7 +47,30 @@
 }
 
 .name {
+  text-align: left;
+  font-family: sans-serif;
+  margin-bottom: 10px;
+  padding-left: 30px;
+}
+
+.about-me {
+  width: 180px;
   text-align: center;
+  border: 2px solid #4a5b9b;
+  border-radius: 30px;
+  background-color: white;
+  margin-left: 80px;
+}
+
+.aboutme-content {
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  padding: 10px;
+}
+.about-me:hover {
+  background-color: #4a5b9b;
+  color: #fff;
 }
 
 .contact-info {
@@ -54,7 +85,7 @@
   width: 100%;
   height: 15%;
   padding-top: 3px;
-  border-style: dotted;
+  border-style: dotted none;
 }
 .contact-info > .content {
   background-color: bisque;
@@ -87,7 +118,7 @@
   width: 100%;
   height: 16%;
   padding-top: 3px;
-  border-style: dotted;
+  border-style: dotted none;
 }
 .ed > .content {
   background-color: bisque;
@@ -124,7 +155,7 @@
   height: 10%;
   text-align: center;
   padding-top: 3px;
-  border-style: dotted;
+  border-style: dotted none;
 }
 .language > .content {
   height: 90%;
@@ -160,5 +191,5 @@
 }
 
 .title:hover ~ .content {
-  background-color: #dac27d;
+  background-color: #c4e1ff;
 }

@@ -35,6 +35,20 @@
   justify-content: center;
   width: 100%;
   height: 50%;
+  position: relative;
+}
+
+.avatar2::after {
+  content: "";
+  width: 180px;
+  height: 24.8px;
+  background-color: white;
+  border-radius: 30px;
+  border: 2px solid #4a5b9b;
+  display: block;
+  position: absolute;
+  right: -110px;
+  top: 50px;
 }
 
 .avatar > .avatar2 > .resume-pic {
@@ -100,14 +114,14 @@
 .fa-square-envelope,
 .fa-github {
   /* padding: 10px 29px; */
-  font-size: 16px;
-  display: block;
+  font-size: 20px;
+  /* display: block; */
   margin: 10px;
 }
 .phone,
 .mail,
 .github {
-  display: inline;
+  display: inline-block;
 }
 .ed {
   background-color: bisque;

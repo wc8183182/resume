@@ -112,6 +112,20 @@
   height: 85%;
   padding: 29px 15px;
   text-align: left;
+  position: relative;
+}
+
+.contact-info > .content::after {
+  position: absolute;
+  content: "自傳";
+  right: -55%;
+  top: 40%;
+  background-color: white;
+  width: 180px;
+  height: 24.8px;
+  text-align: center;
+  border: 2px solid #4a5b9b;
+  border-radius: 30px;
 }
 
 .fa-phone-volume,
@@ -215,12 +229,24 @@
 }
 
 .right-content {
-  padding-top: 13%;
+  /* position: relative; */
+  padding-top: 9%;
+}
+
+.right-content::before {
+  content: "";
+  width: 3px;
+  background-color: #333;
+  height: 70%;
+  position: absolute;
+  right: 50%;
+  top: 70%;
 }
 .time-line {
   display: flex;
-  height: 270px;
-  border-style: none solid dotted none;
+  height: 300px;
+  border-style: dotted solid dotted none;
+  padding-top: 32px;
 }
 .holiday {
   padding: 5px;
@@ -249,4 +275,47 @@
   position: relative;
   clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 80% 100%, 0% 100%);
 }
-/*沒有設父層*/
+.school-exp > .school-exp-title {
+  margin-top: 17%;
+  margin-left: 25%;
+  position: relative;
+}
+
+.school-exp > .school-exp-title::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #4a5b9b;
+  top: 6px;
+  left: -12%;
+}
+
+.school-exp > .school-exp-content {
+  width: 70%;
+  margin-left: 25%;
+  margin-top: 1%;
+}
+
+.work-attitude-title {
+  margin-top: 5%;
+  margin-left: 25%;
+  position: relative;
+}
+.work-attitude-title::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  background-color: #4a5b9b;
+  top: 9px;
+  left: -12%;
+}
+
+.work-attitude-content {
+  margin-top: 1%;
+  margin-left: 25%;
+  width: 70%;
+}

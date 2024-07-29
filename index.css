@@ -56,7 +56,7 @@
 }
 
 .avatar > .avatar2 > .resume-pic {
-  background-image: url("/resume-pic.jpg");
+  background-image: url("./resume-pic.jpg");
   background-size: cover;
   /* height: 40%; */
   width: 40%;

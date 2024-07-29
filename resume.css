@@ -22,6 +22,7 @@
   height: 100%;
   width: 460px;
   background-color: bisque;
+  padding-top: 9%;
 }
 
 .avatar {
@@ -50,12 +51,10 @@
   position: absolute;
   right: -160px;
   top: 50px;
+  box-shadow: 7px 5px 5px rgb(56, 54, 54);
+  transition: background-color 0.7s, color 0.7s; /* 过渡效果 */
 }
 
-.avatar2::after:hover {
-  background-color: #4a5b9b; /* 更改背景颜色 */
-  color: white; /* 更改文字颜色 */
-}
 .avatar > .avatar2 > .resume-pic {
   background-image: url("/resume-pic.jpg");
   background-size: cover;
@@ -128,6 +127,7 @@
   text-align: center;
   border: 2px solid #4a5b9b;
   border-radius: 30px;
+  box-shadow: 7px 5px 5px rgb(56, 54, 54);
 }
 
 .fa-phone-volume,
@@ -165,19 +165,23 @@
 }
 
 .ed > .content > .details {
-  background-color: #e0e0e0;
+  background-color: bisque;
   margin-bottom: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
+  border: 2px solid #4a5b9b;
 }
 
 .date {
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
   font-size: 13px;
 }
 .school {
   font-size: 1.2em;
-  color: #333;
+  /* color: #333; */
+}
+.ed .title:hover ~ .content .details {
+  background-color: white; /* 使背景变成白色 */
 }
 
 .language {
@@ -233,18 +237,6 @@
 }
 /* ~ .content */
 
-.title:hover ~ .content .details {
-  background: #ff88c2;
-}
-.ed .title:hover ~ .content .details {
-  color: white; /* 使文字变成白色 */
-}
-
-.right-content {
-  /* position: relative; */
-  padding-top: 9%;
-}
-
 .right-content::before {
   content: "";
   width: 3px;
@@ -257,7 +249,7 @@
 .time-line {
   display: flex;
   height: 300px;
-  border-style: dotted solid dotted none;
+  border-style: dotted none dotted none;
   padding-top: 32px;
 }
 .holiday {
@@ -297,11 +289,11 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 18px;
+  height: 18px;
   background-color: #4a5b9b;
   top: 6px;
-  left: -12%;
+  left: -13%;
 }
 
 .school-exp > .school-exp-content {
@@ -319,14 +311,34 @@
   content: "";
   position: absolute;
   border-radius: 50%;
-  width: 10px;
-  height: 10px;
+  width: 18px;
+  height: 18px;
   background-color: #4a5b9b;
-  top: 9px;
-  left: -12%;
+  top: 8px;
+  left: -13%;
 }
 
 .work-attitude-content {
+  margin-top: 1%;
+  margin-left: 25%;
+  width: 70%;
+}
+.future-title {
+  margin-top: 5%;
+  margin-left: 25%;
+  position: relative;
+}
+.future-title::before {
+  content: "";
+  position: absolute;
+  background-color: #4a5b9b;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  top: 8px;
+  left: -13%;
+}
+.future-content {
   margin-top: 1%;
   margin-left: 25%;
   width: 70%;

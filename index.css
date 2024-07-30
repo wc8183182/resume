@@ -56,7 +56,7 @@
 }
 
 .avatar > .avatar2 > .resume-pic {
-  background-image: url("resume-pic.jpg");
+  background-image: url("resume-pic.jpg"); /*因為github page上是從https://wc8183182.github.io/resume/這個網址裡面去抓，我照片的檔案放在同一層所以直接寫圖片路徑就可以*/
   background-size: cover;
   /* height: 40%; */
   width: 40%;
